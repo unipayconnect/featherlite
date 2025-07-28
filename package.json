@@ -1,0 +1,30 @@
+{
+  "name": "featherlite-backend",
+  "version": "1.0.0",
+  "description": "This is a backend repository for Featherlite - The Real Estate Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avanishdev/feather-lite-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avanishdev/feather-lite-backend/issues"
+  },
+  "homepage": "https://github.com/Avanishdev/feather-lite-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.5",
+    "nodemailer": "^7.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

@@ -11,8 +11,8 @@ const contactSchema = new mongoose.Schema(
             trim: true
         },
         phoneNumber: { type: String, required: true, trim: true },
-        enquiryType: { type: String, enum: ["landOwner", "broker", "investor", "vendor"], required: true, trim: true },
-        message: { type: String, required: true }
+        enquiryType: { type: String, enum: ["landOwner", "broker", "investor", "vendor"], trim: true },
+        message: { type: String }
     },
     { timestamps: true }
 );

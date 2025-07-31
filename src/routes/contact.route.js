@@ -4,11 +4,11 @@ const Contact = require("../models/contact.model.js");
 const sendEmail = require("../utils/sendEmail.js");
 const { emailTemplate } = require("../utils/emailTemplate.js");
 
-// POST /api/contact
+// POST /api/v1/contact
 router.post("/", async (req, res) => {
     const { firstName, lastName, email, phoneNumber, enquiryType, message } = req.body;
 
-    if (!firstName || !lastName || !email || !phoneNumber || !enquiryType || !message) {
+    if (!firstName || !lastName || !email || !phoneNumber) {
         return res.status(400).json({ error: "All fields are required" });
     }
 
